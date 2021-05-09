@@ -15,7 +15,7 @@ namespace WindowsFormsApplication_Assignment01
         public Form1()
         {
             InitializeComponent();
-            Application.Run(new Form20());
+            Application.Run(new Form14());
         }
 
         private void btnRightMove_Click(object sender, EventArgs e)

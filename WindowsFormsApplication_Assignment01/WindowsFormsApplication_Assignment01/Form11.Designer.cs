@@ -31,8 +31,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.oNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oFFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelOn = new System.Windows.Forms.Label();
+            this.textBoxOn = new System.Windows.Forms.TextBox();
+            this.textBoxOff = new System.Windows.Forms.TextBox();
+            this.labelOff = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,30 +62,49 @@
             this.oFFToolStripMenuItem.Name = "oFFToolStripMenuItem";
             this.oFFToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.oFFToolStripMenuItem.Text = "OFF";
+            this.oFFToolStripMenuItem.Click += new System.EventHandler(this.oFFToolStripMenuItem_Click);
             // 
-            // panel1
+            // labelOn
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 53);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 158);
-            this.panel1.TabIndex = 1;
+            this.labelOn.AutoSize = true;
+            this.labelOn.Location = new System.Drawing.Point(39, 82);
+            this.labelOn.Name = "labelOn";
+            this.labelOn.Size = new System.Drawing.Size(27, 17);
+            this.labelOn.TabIndex = 0;
+            this.labelOn.Text = "On";
             // 
-            // label1
+            // textBoxOn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(357, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.textBoxOn.Location = new System.Drawing.Point(97, 79);
+            this.textBoxOn.Name = "textBoxOn";
+            this.textBoxOn.Size = new System.Drawing.Size(100, 22);
+            this.textBoxOn.TabIndex = 1;
+            // 
+            // textBoxOff
+            // 
+            this.textBoxOff.Location = new System.Drawing.Point(97, 127);
+            this.textBoxOff.Name = "textBoxOff";
+            this.textBoxOff.Size = new System.Drawing.Size(100, 22);
+            this.textBoxOff.TabIndex = 3;
+            // 
+            // labelOff
+            // 
+            this.labelOff.AutoSize = true;
+            this.labelOff.Location = new System.Drawing.Point(39, 130);
+            this.labelOff.Name = "labelOff";
+            this.labelOff.Size = new System.Drawing.Size(27, 17);
+            this.labelOff.TabIndex = 2;
+            this.labelOff.Text = "Off";
             // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 388);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.textBoxOff);
+            this.Controls.Add(this.labelOff);
+            this.Controls.Add(this.textBoxOn);
+            this.Controls.Add(this.labelOn);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form11";
@@ -101,7 +122,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem oNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oFFToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelOn;
+        private System.Windows.Forms.TextBox textBoxOn;
+        private System.Windows.Forms.TextBox textBoxOff;
+        private System.Windows.Forms.Label labelOff;
     }
 }

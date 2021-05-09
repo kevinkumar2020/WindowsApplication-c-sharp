@@ -19,14 +19,26 @@ namespace WindowsFormsApplication_Assignment01
 
         private void Form11_Load(object sender, EventArgs e)
         {
-           
+            labelOn.Visible = false;
+            textBoxOn.Visible = false;
+            labelOff.Visible = false;
+            textBoxOff.Visible = false;
         }
 
         private void oNToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Label lable = new Label();
-            panel1.Controls.Add(lable);
-            lable.Name = "ON";
+            labelOn.Visible = true;
+            textBoxOn.Visible = true;
+            labelOff.Visible = false;
+            textBoxOff.Visible = false;
+        }
+
+        private void oFFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            labelOff.Visible = true;
+            textBoxOff.Visible = true;
+            labelOn.Visible = false;
+            textBoxOn.Visible = false;
         }
     }
 }
